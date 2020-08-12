@@ -22,7 +22,8 @@ class App extends Component {
             <Route path='/my-profile' component={MyProfile}></Route>
             <Route path='/about-us' component={AboutUs}></Route>
             <Route path='/products' component={Products}></Route>
-            <Route exact path='/' component={Home}></Route>
+            <Route path='/goods' component={Products}></Route>
+            <Route path='/' component={Home}></Route>
           </Switch>
         </Router>
       </div>
