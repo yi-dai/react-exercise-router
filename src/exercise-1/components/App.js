@@ -5,6 +5,7 @@ import { Link, Route, Switch } from 'react-router-dom';
 import MyProfile from './MyProfile';
 import AboutUs from './AboutUs';
 import Home from './Home';
+import Products from './Products';
 
 class App extends Component {
   render() {
@@ -13,12 +14,14 @@ class App extends Component {
         <Router>
           <div className="navigation">
             <Link to='/' style={{marginRight:'20px'}}>Home</Link>
+            <Link to='/products' style={{marginRight:'20px'}}>Products</Link>
             <Link to='/my-profile' style={{marginRight:'20px'}}>My Profile</Link>
             <Link to='/about-us' style={{marginRight:'20px'}}>About Us</Link>
           </div>
           <Switch>
             <Route path='/my-profile' component={MyProfile}></Route>
             <Route path='/about-us' component={AboutUs}></Route>
+            <Route path='/products' component={Products}></Route>
             <Route exact path='/' component={Home}></Route>
           </Switch>
         </Router>
